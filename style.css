@@ -57,6 +57,7 @@
     width: 48px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -92,15 +93,39 @@ input:focus {
     outline: 10px solid #7ec1fa;
 }
 
+.nav-setting {
+    position: relative;
+}
+
+#badge {
+    display: none;
+    top: 20%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    width:75px;
+    left: 55px;
+    position: absolute;
+    background-color: black;
+    color: white;
+
+}
+
 .nav-setting-logo {
     height: 20px;
     width: 20px;
 }
 
-.nav-setting:hover {
+.nav-setting:hover{
+    /* display: block; */
     background-color: #e3e3e3;
     border-radius: 9px;
     cursor: pointer;
+}
+
+.nav-setting:hover #badge {
+    display: block;
 }
 
 .create-svg-border {
@@ -245,6 +270,12 @@ input:focus {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+.question-mark-logo:hover {
+    background-color: #e3e3e3;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 @media (max-width: 1750px) {
